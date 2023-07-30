@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="buttonContainer">
+        <div class="textBoxContainer">
+            <div class="textBox">
+                <div class="textBoxTitle">Jap Count</div>
+                <div class="textBoxText" id="japCountText">0</div>
+            </div>
+        </div>
+        <div class="centered">
+            <!-- Your "+" button -->
+            <button class="buttonDark buttonRound" onclick="jap()">
+                <i class="icon" data-char="+"></i>
+            </button>
+        </div>
+
+        <div class="centered">
+            <!-- Your "Reset" button -->
+            <button class="buttonDark buttonRound smallerButton">
+                <i class="icon largerText" onclick="reset1()">Reset</i>
+            </button>
+        </div>
+
+        <div class="textBoxContainer">
+            <div class="textBox whiteBackground">
+                <div class="textBoxTitle">Total Mala</div>
+                <div class="textBoxText" id="totalMalaText">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="indx.js"></script>
+</body>
+
+</html>

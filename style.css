@@ -1,0 +1,145 @@
+@import "compass/css3";
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1F1F1F;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+button {
+  position: relative;
+  font-size: 16px;
+  padding: 0 20px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #FFF;
+  border-radius: 3px;
+  border: 1px solid #1F1F1F;
+  box-shadow: 0 1px 3px 0px rgba(#0F0F0F, .5), inset 0 1px rgba(#FFF, .2);
+  transition: background-position 0.3s ease-in-out;
+}
+
+.buttonRound {
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
+}
+
+.buttonDark {
+  background: linear-gradient(#737373, #333333);
+  background-size: auto 150%;
+  background-position: 0 100%;
+
+  &:hover {
+    background-position: 0 50%;
+  }
+
+  &:active {
+    color: #000;
+    background-position: 0 50%;
+    background: #333333;
+    box-shadow: inset 0 2px 3px rgba(black, .5), 0 1px 1px rgba(white, .1);
+  }
+}
+
+.icon:before {
+  font-style: normal;
+  font-size: 150px;
+  display: block;
+  margin-top: -5px;
+  color: #DDD;
+  text-shadow: 0 1px 1px rgba(black, 1);
+  content: attr(data-char);
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+}
+
+.smallerButton {
+  transform: scale(0.6);
+}
+
+/* 40% larger text for the Reset button */
+.largerText {
+  font-size: 80px; /* Changed back to 40px as requested */
+}
+
+/* White text for the Reset button */
+.whiteText {
+  color: #FFF;
+}
+
+/* Animation for the Reset button */
+.smallerButton:hover .icon {
+  color: #000;
+  text-shadow: 0 1px rgba(white, .1);
+}
+
+/* Animation for the Reset button text */
+.smallerButton:hover .largerText {
+  color: #000;
+  text-shadow: 0 1px rgba(white, .1);
+}
+
+/* ... Your existing CSS rules ... */
+
+.buttonContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBoxContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 60px; /* Add margin below the textBoxContainer */
+}
+
+.textBox {
+  width: 400px;
+  max-width: 100%;
+  background: #FFF;
+  border: 2px solid #1F1F1F;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.whiteBackground {
+  background: #FFF;
+}
+
+.textBoxTitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.textBoxText {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* ... Your existing CSS rules ... */
+
+
